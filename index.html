@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+
+    <!-- Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+    <!---AOS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- My Css-->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Rani</title>
+  </head>
+  <body id="home">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark small-bg fixed-top" style="background-color: #800000e1">
+      <div class="container">
+        <a class="navbar-brand" href="#">Rani Nirmala Prakoso</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Announcement">Announcement</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Picture">Picture</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Wish">Wish</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Akhir Navbar-->
+
+    <!--Jumbotron-->
+    <section class="jumbotron text-center">
+      <img src="img/WhatsApp Image 2021-08-10 at 20.52.02(1).jpg" alt="Rani Nirmala Prakoso" width="200" class="rounded-circle img-thumbnail" data-aos="flip-right" data-aos-duration="2000" data-aos-delay="200" />
+      <h1 class="display-4">Rani Nirmala Prakoso</h1>
+      <img src="img/Harvard.png" alt="Harvard Logo" width="100" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="200" />
+      <p class="lead font-monospace"></p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#f3f4f5"
+          fill-opacity="1"
+          d="M0,160L40,165.3C80,171,160,181,240,192C320,203,400,213,480,229.3C560,245,640,267,720,234.7C800,203,880,117,960,112C1040,107,1120,181,1200,208C1280,235,1360,213,1400,202.7L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!--Akhir Jumbotron-->
+
+    <!-- Timer -->
+    <section id="Timer">
+      <div class="container">
+        <div class="row text-center">
+          <!-- Display the countdown timer in an element -->
+          <p id="demo"></p>
+
+          <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("March 12, 2022 00:00:01").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function () {
+              // Get today's date and time
+              var now = new Date().getTime();
+
+              // Find the distance between now and the count down date
+              var distance = countDownDate - now;
+
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+              // Display the result in the element with id="demo"
+              document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+              // If the count down is finished, write some text
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+          </script>
+        </div>
+      </div>
+    </section>
+    <!--Akhir Timer-->
+
+    <!--Announcement-->
+    <section id="Announcement">
+      <div class="container" data-aos="fade-down" data-aos-duration="2000">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Announcement <i class="bi bi-megaphone-fill"> </i></h2>
+          </div>
+        </div>
+        <div class="row text-center fs-5 text center">
+          <p>Semangat belajar TO UTBK Raniiii <i class="bi bi-emoji-laughing-fill"></i></p>
+        </div>
+      </div>
+    </section>
+    <!--Akhir Announcement-->
+
+    <!--About-->
+    <section id="About">
+      <div class="container" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="50">
+        <div class="row text-center">
+          <div class="col">
+            <h2>About Rani</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-3">
+          <div class="col-6">
+            <p>Full name : Rani Nirmala Prakoso</p>
+            <p>Place & date of birth : Wonogiri, 12th March 2004</p>
+            <p>Zodiak : Pisces</p>
+            <p>Character : Smart, Kind, ignorant</p>
+            <p>Favorite food : Fruit,Steak,& Bomboloni</p>
+            <p>Favorite color: Maroon, Black,& Navy</p>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffe4dd"
+          fill-opacity="1"
+          d="M0,160L48,133.3C96,107,192,53,288,58.7C384,64,480,128,576,144C672,160,768,128,864,101.3C960,75,1056,53,1152,64C1248,75,1344,117,1392,138.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!--Akhir About-->
+
+    <!--Project-->
+    <section id="Picture">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h3>Picture</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="flip-right" data-aos-duration="500">
+              <img src="img/Rani picture 1.jpeg" class="card-img-top" alt="picture 1" />
+              <div class="card-body">
+                <p class="card-text">My first photo in my camera</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="flip-right" data-aos-duration="500" data-aos-delay="50">
+              <img src="img/WhatsApp Image 2021-08-14 at 13.35.26.jpeg" class="card-img-top" alt="picture 2" />
+              <div class="card-body">
+                <p class="card-text">Gatau lucu aja</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="flip-right" data-aos-duration="500" data-aos-delay="100">
+              <img src="img/No iamge.png" class="card-img-top" alt="picture 3" />
+              <div class="card-body">
+                <p class="card-text">No image Availble</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="flip-right" data-aos-duration="500" data-aos-delay="150">
+              <img src="img/No iamge.png" class="card-img-top" alt="picture 4" />
+              <div class="card-body">
+                <p class="card-text">No image Availble</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="flip-right" data-aos-duration="500" data-aos-delay="200">
+              <img src="img/No iamge.png" class="card-img-top" alt="picture 5" />
+              <div class="card-body">
+                <p class="card-text">No image Availble</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card" data-aos="flip-right" data-aos-duration="500" data-aos-delay="250">
+              <img src="img/No iamge.png" class="card-img-top" alt="picture 6" />
+              <div class="card-body">
+                <p class="card-text">No image Availble</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,128L40,149.3C80,171,160,213,240,234.7C320,256,400,256,480,245.3C560,235,640,213,720,181.3C800,149,880,107,960,128C1040,149,1120,235,1200,234.7C1280,235,1360,149,1400,106.7L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!---Akhir Project-->
+
+    <!--Wish-->
+    <section id="Wish">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h3>Wish</h3>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Terimakasih!</strong> Permintaan anda sudah diterima <i class="bi bi-heart-fill"></i> .
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form name="rani-wish">
+              <div class="mb-3">
+                <label for="Name" class="form-label">Your Name</label>
+                <input type="Name" class="form-control" id=" Name" aria-describedby="Name" name="name" />
+                <div id="Name" class="form-text">Insert your name</div>
+              </div>
+              <div class="mb-3">
+                <label for="Wish" class="form-label">Your Wish</label>
+                <input type="Wish" class="form-control" id=" Wish" aria-describedby="Wish" name="wish" />
+                <div id="Wish" class="form-text">Insert your wish and as much as possible I will grant it</div>
+              </div>
+              <div class="mb-3">
+                <label for="Description" class="form-label">Description Wish</label>
+                <textarea class="form-control" id="Description" rows="3" name="description"></textarea>
+                <div id="Wish" class="form-text">Describe your wish in here, like why and when you want this wishes</div>
+              </div>
+              <button type="submit" class="text-white btn-kirim" style="background-color: #800000e1">Submit</button>
+              <button class="btn btn-danger btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#800000e1"
+          fill-opacity="1"
+          d="M0,128L40,144C80,160,I160,192,240,218.7C320,245,400,267,480,250.7C560,235,640,181,720,176C800,171,880,213,960,234.7C1040,256,1120,256,1200,218.7C1280,181,1360,107,1400,69.3L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!--Akhir wish-->
+
+    <!---Footer-->
+    <footer class="text-white text-center pb-5" style="background-color: #800000e1">
+      <p>Created with <i class="bi bi-heart-fill"></i> by <a href="https://www.instagram.com/satrio_brahmantoro/" class="text-white fw-bold"> Satrio Brahmantoro</a></p>
+    </footer>
+    <!---Akhir Footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to(".lead", { duration: 1.5, delay: 1.5, text: "Harvard Students Someday, AAMIIN!!!!" });
+      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
+      gsap.from(".display-4", { duration: 1, x: -50, opacity: 0, duration: 1 });
+    </script>
+
+    <form name="submit-to-google-sheet">
+      <input name="email" type="email" placeholder="Email" required />
+      <button type="submit">Send</button>
+    </form>
+
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbwEpYT6SXw7mDP2bLHXZ2rV58VNLeSt4nxjqp9XBTqaK494TzgaUNrbMLtzGq9LVcQi7w/exec";
+      const form = document.forms["rani-wish"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        //ketika tombol submit diklik
+        //tampulan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle("d-none");
+        btnKirim.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            //Tampilkan tombol kirim, hilangkan tombol login
+            btnLoading.classList.toggle("d-none");
+            btnKirim.classList.toggle("d-none");
+            //tampilkan alert
+            myAlert.classList.toggle("d-none");
+            //reset form
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
